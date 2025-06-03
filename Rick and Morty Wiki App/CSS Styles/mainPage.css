@@ -28,13 +28,13 @@ body {
 
 @media (max-width: 1024px) {
   .items-gird {
-    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    grid-template-columns: repeat(2, 1fr); 
   }
 }
 
 @media (max-width: 600px) {
   .items-gird {
-    grid-template-columns: 1fr; /* 1 column for mobile */
+    grid-template-columns: 1fr; 
   }
 }
 
