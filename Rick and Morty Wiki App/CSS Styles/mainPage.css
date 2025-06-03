@@ -1,0 +1,117 @@
+
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+        background-color: var(--bg-color);
+        color: var(--text-color);
+      }
+
+      .items-gird {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+      }
+
+      .character-card {
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        text-align: center;
+        background-color: var(--card-bg);
+      }
+
+      .character-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      .character-card h2 {
+        font-size: 1.2em;
+        margin: 10px 0;
+      }
+
+      .character-card p {
+        margin: 5px 0;
+        color: #555;
+      }
+
+      #page-info {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+
+      .nav-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+      .nav-btn button {
+        padding: 10px 20px;
+        margin: 0 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .nav-btn button:hover {
+        background-color: #0056b3;
+      }
+
+      .nav-btn button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      footer {
+        text-align: center;
+        margin-top: 20px;
+        font-size: 0.9em;
+        color: #666;
+        color: var(--footer-color);
+      }
+      #clock {
+        font-weight: bold;
+      }
+      footer span {
+        color: #333;
+      }
+      #random-btn {
+        background-color: #28a745;
+      }
+
+      #random-btn:hover {
+        background-color: #1e7e34;
+      }
+      :root {
+        --bg-color: #f0f0f0;
+        --text-color: #000000;
+        --card-bg: #ffffff;
+        --footer-color: #666;
+      }
+
+      body.dark-mode {
+        --bg-color: #121212;
+        --text-color: #ffffff;
+        --card-bg: #1e1e1e;
+        --footer-color: #aaa;
+      }
+      #theme-toggle {
+        padding: 6px 12px;
+        background-color: #444;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      #theme-toggle:hover {
+        background-color: #222;
+      }
+ 
