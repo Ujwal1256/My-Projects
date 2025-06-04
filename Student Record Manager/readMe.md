@@ -15,7 +15,7 @@ A simple web app to manage student records using only HTML, CSS, and JavaScript 
 
 ## Demo
 
-[Live Demo](#) <!-- Replace with your deployed link -->
+[Live Demo](https://flourishing-chebakia-3cfca3.netlify.app/) 
 
 ---
 
@@ -31,7 +31,7 @@ A simple web app to manage student records using only HTML, CSS, and JavaScript 
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/Ujwal1256/My-Projects.git
-    
+
     ```
 
 2. **Open Student Record Manager Folder**
