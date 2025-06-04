@@ -1,0 +1,211 @@
+:root {
+  --bg-color: #f9f9f9;
+  --text-color: #2c3e50;
+  --card-bg: #ffffff;
+  --card-shadow: rgba(0, 0, 0, 0.1);
+  --card-hover-shadow: rgba(0, 0, 0, 0.2);
+  --primary-color: #007bff;
+  --primary-hover: #0056b3;
+  --accent-color: #28a745;
+  --accent-hover: #1e7e34;
+  --footer-color: #666;
+  --radius: 8px;
+}
+
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --card-bg: #1e1e1e;
+  --card-shadow: rgba(255, 255, 255, 0.05);
+  --card-hover-shadow: rgba(255, 255, 255, 0.15);
+  --primary-color: #66b2ff;
+  --primary-hover: #4a8cc2;
+  --accent-color: #5cd65c;
+  --accent-hover: #3ca93c;
+  --footer-color: #aaa;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Grid container */
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .items-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .items-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Individual card */
+.character-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px var(--card-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px var(--card-hover-shadow);
+}
+
+/* Wrap entire card in a link */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+}
+
+/* Image container with gradient overlay */
+.character-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.character-card:hover img {
+  transform: scale(1.05);
+}
+.character-card img::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+}
+
+/* Card content */
+.character-card h3 {
+  font-size: 1.25rem;
+  margin: 16px 12px 8px;
+  color: var(--text-color);
+  text-align: center;
+}
+
+.character-card p {
+  font-size: 0.95rem;
+  margin: 4px 12px 12px;
+  color: #555;
+  text-align: center;
+}
+
+#page-info {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Navigation buttons wrapper */
+.nav-btn {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav-btn button {
+  padding: 10px 24px;
+  margin: 6px 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.nav-btn button:not(#random-btn) {
+  background-color: var(--primary-color);
+}
+.nav-btn button:not(#random-btn):hover:not(:disabled) {
+  background-color: var(--primary-hover);
+  transform: translateY(-2px);
+}
+
+/* Random button */
+#random-btn {
+  background-color: var(--accent-color);
+}
+#random-btn:hover:not(:disabled) {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+}
+
+/* Disabled state */
+.nav-btn button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* Theme toggle button */
+#theme-toggle {
+  display: block;
+  margin: 0 auto 15px;
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+#theme-toggle:hover {
+  background-color: #222;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--footer-color);
+}
+#clock {
+  font-weight: bold;
+  color: var(--footer-color);
+}
+
+/* Mobile adjustments */
+@media (max-width: 480px) {
+  .nav-btn button {
+    width: 100%;
+    max-width: 300px;
+    margin: 6px 0;
+  }
+  #theme-toggle {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+  }
+}
