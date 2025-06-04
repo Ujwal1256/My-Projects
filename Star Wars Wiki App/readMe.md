@@ -58,9 +58,9 @@ The Star Wars Wiki Application is a web-based encyclopedia that displays charact
 1. Clone the repository:
      ```bash
      git clone https://github.com/your-username/star-wars-wiki-app.git
-     cd star-wars-wiki-app
+     Open index.html file on any brower.
      ```
-2. Open index.html file on any brower.
+
 
 ---
 
