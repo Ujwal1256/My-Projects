@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Search Dashboard</h2>
+        <input type="text" id="searchBox" placeholder="Type a name..." autocomplete="off" />
+        <div class="stats">
+            <span>Total Keystrokes: <span id="keystrokes">0</span></span>
+            <span>Debounced Searches: <span id="debouncedCount">0</span></span>
+        </div>
+        <div id="loader" class="loader" style="display:none;">Searching...</div>
+        <ul class="results" id="results"></ul>
+        <div id="noResults" class="no-results" style="display:none;">No results found</div>
+    </div>
+    <button id="backToTop" title="Back to Top">&#8679;</button>
+    <script src="script.js"></script>
+</body>
+</html>
