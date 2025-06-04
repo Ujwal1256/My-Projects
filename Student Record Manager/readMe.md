@@ -31,10 +31,11 @@ A simple web app to manage student records using only HTML, CSS, and JavaScript 
 1. **Clone the repository:**
     ```bash
     git clone https://github.com/Ujwal1256/My-Projects.git
-    Open Student Record Manager Folder
-    Open index.html in your browser.
+    
     ```
-2. **Open `index.html` in your browser.**
+
+2. **Open Student Record Manager Folder**
+3. **Open `index.html` in your browser.**
 
 ---
 
