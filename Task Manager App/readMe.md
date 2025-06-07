@@ -17,7 +17,7 @@ Build a Task Manager Web App with user authentication and CRUD operations for pe
     - ✅ **Mark as complete**
     - 📝 **Edit**
     - ❌ **Delete**
-- Use appropriate HTTP methods (`POST`, `GET`, `PATCH`, `DELETE`) via `fetch()` to a mock API (e.g., [jsonplaceholder](https://jsonplaceholder.typicode.com/posts)) or a local server (e.g., `db.json`).
+
 
 ### 3. Authorization
 - Only authenticated users can access the Task Manager page.
@@ -59,6 +59,17 @@ Task Manager App/
 - `firebase.js` - Firebase configuration and authentication logic.
 - `readMe.md` - Project documentation.
 
+## 🚀 How to Run the App
+
+1. **Clone the repository** or download the project files to your local machine.
+2. **Install dependencies:**  
+    No build tools required—just ensure you have a modern web browser and internet access.
+3. **Set up Firebase:**  
+    - Create a Firebase project at [Firebase Console](https://console.firebase.google.com/).
+    - Enable **Authentication** (Email/Password) and **Firestore** or **Realtime Database**.
+    - Copy your Firebase config and paste it into `firebase.js`.
+4. **Run locally:**  
+    - Open `index.html` in your browser to start the app.
 
 
 
