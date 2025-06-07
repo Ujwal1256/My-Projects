@@ -51,6 +51,12 @@ A web application to browse, filter, sort, and paginate products using the [Fake
 - **Fields:**
   - `image`, `title`, `price`, `category`
 
+## 🚀 Deployment
+
+The app is deployed on Netlify for easy access.
+
+[Live Demo on Netlify](https://product-explorer-app-demo.netlify.app/)
+
 ## 📸 Screenshots
 
 ![alt text](<Screenshot 2025-06-07 215550.png>)
