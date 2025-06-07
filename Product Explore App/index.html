@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Explorer App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="controls">
+      <input
+        type="text"
+        class="search-input"
+        placeholder="Search products..."
+      />
+      <select class="sort-dropdown">
+        <option value="">Sort By</option>
+        <option value="price-asc">Price: Low to High</option>
+        <option value="price-desc">Price: High to Low</option>
+        <option value="title-asc">Title: A-Z</option>
+      </select>
+      <div class="category-filters"></div>
+    </div>
+    <div class="product-container"></div>
+    <div class="nav-btn-container">
+      <button id="prev-btn">Previous</button>
+      <p id="page-no">Page 1</p>
+      <button id="next-btn">Next</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
